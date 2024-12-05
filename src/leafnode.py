@@ -6,7 +6,7 @@ class LeafNode(HTMLNode):
 
     def to_html(self):
         if self.value is None:
-            raise ValueError("Invalid HTML: no value")
+            raise ValueError("Error: no value")
 
         if self.tag is None:
             return self.value
